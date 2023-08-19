@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <button id="MenuBtn" class="button" onclick="addClass();">Menu</button>
+    </div>
+    <header class="cabecera">
+        <div id="header">
+            <h1>My Page</h1>
+        </div>
+    </header>
+    <nav class="navigator-hiden" id="nav-Menu">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="brand" href="index.html">My Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://allmylinks.com/kevaodv" target="_blank">My portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item" id="close">
+                <a class="nav-link" onclick="removeClass();">X</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <div class="row-1">
+                    <div class="card-form">
+                        <form action="" method="get">
+                            <div class="card-title">
+                                <h2>
+                                    Title Form
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" class="input" name="nombre" id="nombre" required placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="input" name="telefono" id="telefono" required placeholder="Telefono">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="input" name="mail" id="mail" required placeholder="Mail">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="msg" id="msg" required placeholder="comentario"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <span> &copy; 2023 - MyPage </span>
+    </footer>
+    <script>
+        let addClass = () => {
+            var x = document.getElementById('MenuBtn');
+            x.classList.add('hide');
+            x.parentElement.classList.remove('nav');
+            var y = document.getElementById('nav-Menu');
+            y.classList.remove('navigator-hiden');
+            y.classList.add('navigator-show');
+        }
+
+        let removeClass = () => {
+            var y = document.getElementById('nav-Menu');
+            y.classList.remove('navigator-show');
+            y.classList.add('navigator-hiden');
+            var x = document.getElementById('MenuBtn');
+            x.classList.remove('hide');
+            x.parentElement.classList.add('nav');
+        }
+    </script>
+</body>
+</html>
