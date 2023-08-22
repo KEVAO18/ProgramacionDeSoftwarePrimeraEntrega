@@ -14,6 +14,15 @@
 
 .img-header{
     height: 40vh;
+    box-shadow: 0 0 10px var(--blue-l);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.img-header:hover{
+    box-shadow: 5px 5px 10px var(--blue-l);
+    transition: .5s;
+    height: 39vh;
 }
 
 .cabecera{
