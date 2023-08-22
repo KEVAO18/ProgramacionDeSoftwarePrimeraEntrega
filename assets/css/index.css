@@ -12,6 +12,10 @@
     list-style-type: none;
 }
 
+.img-header{
+    height: 40vh;
+}
+
 .cabecera{
     height: 70vh;
     width: 100%;
@@ -26,7 +30,7 @@
     color: var(--blue);
     text-shadow: 0 0 10px var(--blue);
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 10vh;
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
 }
@@ -52,6 +56,8 @@
     position: fixed;
     right: -100vh;
     transition: 1s;
+    top: 0;
+    bottom: 0;
 }
 
 small > a{
@@ -281,7 +287,6 @@ small > a{
 
     .navigator-show{
         position: fixed;
-        float: right;
         left: 0;
         right: 0;
         top: 0;
@@ -293,8 +298,9 @@ small > a{
 
     .navigator-hiden{
         position: fixed;
-        float: right;
         left: -100vw;
+        top: 0;
+        bottom: 0;
         background-color: var(--dark-l);
         text-align: center;
         transition: 1s;
