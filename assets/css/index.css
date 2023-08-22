@@ -54,6 +54,12 @@
     transition: 1s;
 }
 
+small > a{
+    text-decoration: none;
+    color: var(--blue);
+    font-family: 'Raleway', sans-serif;
+}
+
 @media (min-width: 1000px) {
     .button{
         position: fixed;
@@ -203,6 +209,7 @@
         color: var(--ligth);
         padding: 5px 0;
         font-family: 'Raleway', sans-serif;
+        z-index: -1;
     }
     
     .form-group{
@@ -211,7 +218,7 @@
     
     .input{
         width: 100%;
-        height: 5vh;
+        height: 7vh;
         border-radius: 10px;
         border-width: 1px;
         border-style: outset;
@@ -221,6 +228,8 @@
     }
     
     textarea{
+        width: 100%;
+        height: 20vh;
         border-radius: 10px;
         border-width: 1px;
         border-style: outset;
@@ -236,6 +245,7 @@
         border-radius: 5px;
         border-style: solid;
         border-width: 1px;
+        border-color: var(--blue-l);
         background: linear-gradient(90deg, var(--blue), var(--blue));
         color: var(--ligth);
         box-shadow: 0 0 20px var(--blue);
